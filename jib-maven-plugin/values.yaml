@@ -1,0 +1,12 @@
+jib:
+  name: jib
+  replicas: 1
+  image: dogandemir51/jib-maven-helm:0.0.1-SNAPSHOT
+  imagePullPolicy: Always
+  containerPort: 8080
+service:
+  name: jib
+  type: NodePort
+  port: 8080
+  targetPort: 8080
+  nodePort: 30080

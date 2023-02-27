@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.jib.name }}
+  labels:
+    app: {{ .Values.jib.name }}
+spec:
+  replicas: {{ .Values.jib.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.jib.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.jib.name }}
+    spec:
+      containers:
+        - name: {{ .Values.jib.name }}
+          image: {{ .Values.jib.image }}
+
+          imagePullPolicy: {{ .Values.jib.imagePullPolicy }}
+          ports:
+            - containerPort: {{ .Values.jib.containerPort }}
