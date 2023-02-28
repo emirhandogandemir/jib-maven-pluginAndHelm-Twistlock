@@ -13,3 +13,13 @@
 https://helm.sh/docs/intro/install/
 ## Twistlock
 ![image](https://user-images.githubusercontent.com/74687192/221972214-6f0ede68-592c-43dd-92c5-443bb87efcd5.png)
+
+### Problem 1)
+
+- Çözüm 1) Twistlock üzerinde credentials ekleyip kendi docker repomu registry olarak tanımlamam gerekir
+ ![image](https://user-images.githubusercontent.com/74687192/221976671-e9fb8043-c53d-4a90-8b86-caf7c7f7704b.png)
+ 
+ 
+- Çözüm 2) Twistlock free olarak container olarak çalıştırabilir miyim localimde 
+
+`docker run -it --rm -p 8083:8083 -p 8084:8084 -p 8085:8085 -v /var/run/docker.sock:/var/run/docker.sock --name twistlock twistlock/defender:latest` çalışmadı.
