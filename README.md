@@ -14,12 +14,21 @@ https://helm.sh/docs/intro/install/
 ## Twistlock
 ![image](https://user-images.githubusercontent.com/74687192/221972214-6f0ede68-592c-43dd-92c5-443bb87efcd5.png)
 
-### Problem 1)
+### Problem 1)(Çözüldü)
 
-- Çözüm 1) Twistlock üzerinde credentials ekleyip kendi docker repomu registry olarak tanımlamam gerekir
+- Çözüm 1) Twistlock üzerinde credentials ekleyip kendi docker repomu registry olarak tanımladım
  ![image](https://user-images.githubusercontent.com/74687192/221976671-e9fb8043-c53d-4a90-8b86-caf7c7f7704b.png)
  
- 
-- Çözüm 2) Twistlock free olarak container olarak çalıştırabilir miyim localimde 
+![image](https://user-images.githubusercontent.com/74687192/225973453-0ebcbe17-90c5-4566-ba61-49839044d8fb.png)
+![image](https://user-images.githubusercontent.com/74687192/225973654-c913dcc6-fd0a-40dd-8576-d18767afd43a.png)
 
-`docker run -it --rm -p 8083:8083 -p 8084:8084 -p 8085:8085 -v /var/run/docker.sock:/var/run/docker.sock --name twistlock twistlock/defender:latest` çalışmadı.
+ 
+## Twistlock
+Monitor=>Images=>CI
+![image](https://user-images.githubusercontent.com/74687192/225973807-7db13c38-13f3-49bf-a548-229671a95536.png)
+
+![image](https://user-images.githubusercontent.com/74687192/225972317-fecae148-e850-40a4-887f-451999f3ebe4.png)
+
+### Twistlock Taranan detaylı image çıktıları
+![image](https://user-images.githubusercontent.com/74687192/225972555-1fdc5c3d-9214-4b25-826a-61208d236ab2.png)
+![image](https://user-images.githubusercontent.com/74687192/225972590-db0482cf-30ca-4ae8-9f0b-56075e84725c.png)
