@@ -32,3 +32,9 @@ Monitor=>Images=>CI
 ### Twistlock Taranan detaylı image çıktıları
 ![image](https://user-images.githubusercontent.com/74687192/225972555-1fdc5c3d-9214-4b25-826a-61208d236ab2.png)
 ![image](https://user-images.githubusercontent.com/74687192/225972590-db0482cf-30ca-4ae8-9f0b-56075e84725c.png)
+
+## Deploying with Helm & ArgoCd
+![image](https://user-images.githubusercontent.com/74687192/231482958-751b5ad7-b3b8-4259-996d-d5f3cc82c59f.png)
+![image](https://user-images.githubusercontent.com/74687192/231483061-855610ae-a6fe-4c39-9b01-d5d3ad6e2865.png)
+
+
